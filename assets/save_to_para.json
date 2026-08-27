@@ -4,18 +4,18 @@
     "category": {
       "type": "string",
       "enum": ["Projects", "Areas", "Resources", "Archives"],
-      "description": "Категория PARA для сохранения."
+      "description": "PARA category where the note should be saved."
     },
     "content": {
       "type": "string",
-      "description": "Синтезированный текст заметки, задачи или извлеченная информация."
+      "description": "Cleaned and structured note content to save."
     },
     "tags": {
       "type": "array",
       "items": {
         "type": "string"
       },
-      "description": "Список тегов для последующего векторного поиска."
+      "description": "Tags used for later search and retrieval."
     }
   },
   "required": ["category", "content"]
