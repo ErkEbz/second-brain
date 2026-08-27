@@ -1,8 +1,0 @@
-{
-  "type": "object",
-  "properties": {
-    "phone": { "type": "string", "description": "Номер телефона получателя." },
-    "message": { "type": "string", "description": "Текст SMS-сообщения." }
-  },
-  "required": ["phone", "message"]
-}
