@@ -1,18 +1,68 @@
-# Second Brain Autonomous Agent Skill (v4.0.0)
+# Second Brain Agent Skill
 
-Полностью автономный on-device агент для управления знаниями по методологии PARA (Projects, Areas, Resources, Archives). Оптимизирован для моделей Gemma 4 (E2B/E4B) и работает 100% оффлайн, гарантируя абсолютную приватность ваших данных.
+An offline-capable, on-device knowledge management skill based on the **PARA** method:
 
-## Установка (Sideloading) в Google AI Edge Gallery
+- **Projects**
+- **Areas**
+- **Resources**
+- **Archives**
 
-Для установки локальной версии выполните следующие шаги:
+Second Brain acts as a persistent personal knowledge assistant. It helps capture, organize, save, retrieve, and summarize useful information while keeping data local to the device.
 
-1. Установите приложение **Google AI Edge Gallery** (требуется Android 12+ или iOS 17+).
-2. Скопируйте папку `second-brain` (включая все подпапки) во внутреннюю память вашего смартфона или планшета.
-3. Откройте приложение Gallery и перейдите в раздел **Agent Skills**.
-4. Выберите опцию **"Import from local file"** и укажите путь к скопированной папке навыка.
-5. При активации навыка предоставьте ему запрошенные разрешения для доступа к файловой системе (`storage.read`, `storage.write`).
+Optimized for smaller models such as **Gemma 4 E2B/E4B** with concise prompts, structured outputs, and simple, reliable tool behavior.
 
-## Архитектура
-- **SKILL.md** — L1 Метаданные и ролевые инструкции для LLM.
-- **scripts/** — Изолированная среда выполнения (WebView) для базы данных SQLite WASM и бизнес-логики.
-- **assets/** — JSON-схемы для вызова инструментов.
+## Features
+
+- Save useful user input as structured memory by default
+- Organize notes into PARA categories
+- Retrieve past notes and related knowledge
+- Summarize messy text and voice-note transcripts
+- Extract tasks, deadlines, people, and key decisions
+- Work in an offline-capable local environment
+- Privacy-first design with on-device storage
+
+## Installation
+
+### Google AI Edge Gallery
+
+To sideload the skill:
+
+1. Install **Google AI Edge Gallery**  
+   Requires **Android 12+** or **iOS 17+**
+
+2. Copy the `second-brain` folder  
+   Include all files and subfolders.
+
+3. Move it to local storage on your phone or tablet.
+
+4. Open **Google AI Edge Gallery**
+
+5. Go to **Agent Skills**
+
+6. Select **Import from local file**
+
+7. Choose the copied `second-brain` folder
+
+8. Grant requested permissions when prompted, such as:
+   - `storage.read`
+   - `storage.write`
+
+## Architecture
+
+- `SKILL.md` — metadata and core model instructions
+- `scripts/` — isolated runtime for SQLite WASM and local business logic
+- `assets/` — JSON tool schemas
+
+## Design Notes
+
+- Built for offline-capable local use
+- Designed to be useful on smaller instruction-tuned models
+- Uses structured note capture and PARA classification
+- External actions require explicit user intent or confirmation
+
+## Licen
+se
+
+Licensed under the **Apache License 2.0**.
+
+If you distribute a modified version, keep the original license and attribution notices and clearly mark your changes.
