@@ -1,9 +1,18 @@
 {
   "type": "object",
   "properties": {
-    "hour": { "type": "integer", "description": "Час срабатывания будильника (0-23)." },
-    "minute": { "type": "integer", "description": "Минуты срабатывания будильника (0-59)." },
-    "message": { "type": "string", "description": "Текстовое сообщение или название задачи." }
+    "hour": {
+      "type": "integer",
+      "description": "Hour when the alarm should trigger (0-23)."
+    },
+    "minute": {
+      "type": "integer",
+      "description": "Minute when the alarm should trigger (0-59)."
+    },
+    "message": {
+      "type": "string",
+      "description": "Optional label or task name for the alarm."
+    }
   },
   "required": ["hour", "minute"]
 }
