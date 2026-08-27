@@ -3,15 +3,15 @@
   "properties": {
     "file_path": {
       "type": "string",
-      "description": "Путь к локальному файлу навыка для изменения (например, SKILL.md или scripts/index.html)."
+      "description": "Path to the local skill file to modify, for example SKILL.md or scripts/index.html."
     },
     "new_code": {
       "type": "string",
-      "description": "Новый полный исходный код или текст, который полностью заменит текущее содержимое файла."
+      "description": "New full file contents that will replace the current file."
     },
     "reason": {
       "type": "string",
-      "description": "Аналитическое обоснование мутации (почему потребовалось изменить код)."
+      "description": "Explanation of why the change is needed."
     }
   },
   "required": ["file_path", "new_code", "reason"]
