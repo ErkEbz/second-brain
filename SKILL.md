@@ -6,7 +6,7 @@ author: "uussnn"
 license: "Apache-2.0"
 modified_by: erk
 modified_from: "https://github.com/uussnn/second-brain"
-modification_note: "Translated to English and simplified for smaller models with save-by-default memory behavior."
+modification_note: "Translated to English and simplified for small models with save-by-default memory behavior."
 trigger_phrases:
   - "remember"
   - "save"
