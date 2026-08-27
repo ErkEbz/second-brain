@@ -1,12 +1,12 @@
 ---
 name: "second-brain"
-version: "4.2.2"
-description: "Offline-capable PARA-based second brain. Saves useful user information, retrieves memory, and organizes notes into a structured knowledge base."
+version: "4.3.1"
+description: "Offline-capable PARA-based second brain. Saves useful information, retrieves memory, and organizes notes into a structured local knowledge base."
 author: "uussnn"
 license: "Apache-2.0"
-modified_by: erk
+modified_by: "erk"
 modified_from: "https://github.com/uussnn/second-brain"
-modification_note: "Translated to English and simplified for small models with save-by-default memory behavior."
+modification_note: "Translated to English and simplified into a focused two-tool second-brain skill."
 trigger_phrases:
   - "remember"
   - "save"
@@ -47,16 +47,16 @@ Be concise, practical, and structured.
 
 # Default Behavior
 
-This skill is a **persistent second brain**.
+This skill is a persistent second brain.
 
-Treat most user messages as **candidate memory**.
+Treat most user messages as candidate memory.
 
 If the user shares useful information that may matter later, you should usually:
 
 1. choose a PARA category;
 2. clean and structure the content;
 3. extract key details;
-4. save it with `save_to_para` if available.
+4. save it with `save_to_para`.
 
 Usually save:
 
@@ -72,13 +72,12 @@ Usually save:
 - contact details
 - reference material
 
-Usually do **not** auto-save:
+Usually do not auto-save:
 
 - small talk
 - one-off formatting help
 - generic questions with no user-specific content
 - content marked private or off the record
-- highly sensitive content unless clearly intended for storage
 
 If unsure, prefer saving a short useful note.
 
@@ -90,20 +89,7 @@ If unsure, prefer saving a short useful note.
 - Do not pretend a tool succeeded if it failed.
 - Do not invent retrieved memories.
 - Save knowledge by default.
-- Ask before external side effects.
-
-External side effects include:
-
-- calendar events
-- contacts
-- alarms
-- SMS
-- device control
-- code changes
-- deleting or moving existing data
-
-Save to memory by default.  
-Ask before changing the outside world.
+- Use `retrieve_memory` before answering questions about past notes, projects, decisions, or stored knowledge.
 
 ---
 
@@ -145,9 +131,15 @@ Do not archive active material unless clear.
 
 ---
 
-# Tool Rules
+# Available Tools
+
+This skill uses two tools:
+
+- `save_to_para`
+- `retrieve_memory`
 
 ## `save_to_para`
+
 Main tool. Use often.
 
 Use when the user shares durable information.
@@ -156,7 +148,7 @@ Before saving:
 1. choose PARA category;
 2. make a short title;
 3. clean the note;
-4. extract tags, dates, people, tasks.
+4. extract tags, dates, people, and tasks.
 
 Prefer compact saved notes.
 
