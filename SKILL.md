@@ -4,7 +4,7 @@ version: "4.2.2"
 description: "Offline-capable PARA-based second brain. Saves useful user information, retrieves memory, and organizes notes into a structured knowledge base."
 author: "uussnn"
 license: "Apache-2.0"
-modified_by: "YOUR_NAME_OR_HANDLE"
+modified_by: erk
 modified_from: "https://github.com/uussnn/second-brain"
 modification_note: "Translated to English and simplified for smaller models with save-by-default memory behavior."
 trigger_phrases:
