@@ -1,22 +1,25 @@
 ---
 date: {{date}}
 status: active
-tags: [project, new]
+category: Projects
+tags: [project]
 ---
 
-# Project: {{project_name}}
+# {{project_name}}
 
-## 🎯 Goals
-- [ ] Define the primary objective of this project.
-- [ ] List key milestones.
+## Goal
+- [ ] Define the main objective
 
-## 📝 Tasks
-- [ ] Task 1
-- [ ] Task 2
+## Milestones
+- [ ] Add key milestone
+- [ ] Add key milestone
 
-## 📚 Resources & Links
-- References: 
-- Related MOCs: [[MOC-Index]]
+## Tasks
+- [ ] Add first task
+- [ ] Add next task
 
----
-*Created by Second Brain Agent*
+## Notes
+- Add important context, decisions, or constraints
+
+## References
+- Add links, files, or related notes
